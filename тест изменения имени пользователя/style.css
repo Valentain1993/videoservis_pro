@@ -1,0 +1,15 @@
+.name {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+.chips-style {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+

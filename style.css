@@ -1,0 +1,458 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-size: 16px;
+    line-height: 19px;
+    background-color: white; 
+    font-family: 'Rubik Light';
+    background: #FFFFFF;
+}
+
+@font-face {
+    font-family: Rubik-Black;
+    src: url(fonts/Rubik-Black.ttf);
+
+    font-family: Rubik-Medium;
+    src: url(fonts/Rubik-Medium.ttf);
+
+}
+
+main,
+header {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    padding-top: 43px;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header_logo-img {
+    background: red;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    color: #fff;
+    margin-right: 11px;
+}
+
+.header_logo-img::after {
+    content: ''; 
+    position: absolute; 
+    top: 0px;
+    color: #fff;
+    left: 6px;
+    right: -30px; 
+    border: 15px solid transparent;
+    border-left: 27px solid #fff;
+}
+
+.header_logo_h1 {
+    margin: auto 0;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Rubik-Medium;
+}
+
+
+
+.header_search-input::placeholder {
+    font-family: Rubik-Black;
+}
+
+.header_search-input {
+    width: 320px;
+    height: 20px;
+    border: 0px;
+    border-bottom: 1px solid #333333;
+    margin-right: 32px;
+    font-family: Rubik-Medium;
+}
+
+.header_search-button {
+    border: 0px;
+    background-color: white;
+    color: #E5261E;
+    font-family: Rubik-Medium;
+}
+
+.header_search-button [placeholder] {
+    color: #828282;
+}
+
+.header_lk-button {
+    width: 113px;
+    height: 38px;
+    background: #E5261E;
+    border-radius: 4px;
+    border: 0px;
+    color: #FFFFFF;
+    font-family: Rubik-Medium;
+}
+
+.header_lk-button:hover {
+    background-color: #CC221B;
+}
+
+.header_wrap-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+.header_wrap {
+    width: 304px;
+    height: 394px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.hide-wrap {
+    display: none;
+}
+
+.header_wrap-h2 {
+    margin-top: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: Rubik-Medium;
+}
+
+.header_wrap-log,
+.header_wrap-pass {
+    color: #828282;
+    width: 232px;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-left: 36px;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+}
+
+.header_wrap-label {
+    display: inline-block;
+    
+    padding-left: 6px;
+}
+
+.header_wrap-chekbox {
+    
+    margin-left: 36px;
+}
+
+.header_wrap-button {
+    width: 113px;
+    height: 38px;
+    background: #E5261E;
+    border-radius: 4px;
+    border: 0px;
+    color: #FFFFFF;
+    font-family: Rubik-Medium;
+    display: block;
+    margin: 0 auto;
+    margin-top: 111px;
+}
+
+#header_lk-pass {
+    display: none;
+}
+
+#header_lk-name {
+    border: 0;
+    font-family: Rubik-Medium;
+}
+
+#header_lk-exit {
+    border: 0px;
+    background-color: white;
+    color: #E5261E;
+    font-family: Rubik-Medium;
+}
+
+/* главная навигация */
+
+.main_nav {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.main_nav-movie,
+.main_nav-TVchannels {
+    color: #E5261E;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    font-family: Rubik-Medium;
+}
+
+
+.main_nav-movie_container {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.main_nav-TVchannels_container {
+    margin-right: auto;
+}
+
+.main_nav-movie_container,
+.main_nav-TVchannels_container {
+    padding-bottom: 9px;
+    border-bottom: 2px solid #E5261E;
+}
+
+/*  раздел новинки */
+
+.container-new_h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 10px;
+    font-family: Rubik-Medium;
+}
+
+.container-new_h2::before {
+    content: url('img/container-new_h1.before.png');
+    padding-right: 5px;
+}
+
+.new {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.new div {
+    width: 280px;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-bottom: 32px;
+    
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.new a {
+    text-decoration: none;
+    color: #333333;
+}
+
+
+.new img {
+    width: 280px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Это всплывающий блок для фильма Однажды в Голливуде */
+.new_golliwud-info {
+    
+    width: 250px;
+    height: 330px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #F2F2F2;
+    padding: 16px;
+    position: relative;
+    bottom: 410px;
+}
+
+/*  раздел жанры */
+
+.genres {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 72px;
+}
+
+.genres a {
+    text-decoration: none;
+}
+
+
+.genres div {
+    box-sizing: border-box;
+    width: 280px;
+    height: 208px;
+    margin-right: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+
+.container-genres h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    font-family: Rubik-Medium;
+}
+
+.genres_comedies,
+.genres_dramas,
+.genres_fantasy,
+.genres_horror {
+    text-align: center;
+}
+
+.genres_img {
+    padding-top: 80px;
+}
+
+.genres_h3 {
+    padding-top: 32px;
+}
+
+.genres_comedies {
+    background: linear-gradient(136.27deg, #F2C94C 8.44%, #F29A4A 91.36%);
+    opacity: 0.8;
+}
+
+.genres_comedies:hover {
+    background: linear-gradient(136.27deg, #e2bc45 8.44%, #e49244 91.36%);
+    opacity: 0.8;
+}
+
+.genres_dramas {
+    background: linear-gradient(136.27deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.genres_fantasy {
+    background: linear-gradient(136.27deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.genres_horror {
+    background: linear-gradient(136.27deg, #828282 8.44%, #333333 91.36%);
+}
+
+.footer {
+    height: 120px;
+    display: flex;
+    color: #333333;
+    background: #F2F2F2;
+}
+
+.footer-copy-site {
+    font-weight: 500;
+    color: #1F4766;
+}
+
+.footer-logo {
+    padding-left: 50px;
+    margin-right: 40px;
+    margin-top: 22px;
+}
+
+.footer-copy-adres {
+    margin-top: 22px;
+    margin-bottom: 6px;
+}
+
+.footer-copy-tel {
+    margin-bottom: 10px;
+}
+
+.footer-copy-site {
+    font-family: Rubik-Medium;
+    text-decoration: none;
+}
+
+/* Страница с каналами */
+
+.TVchannels {
+    margin-bottom: 72px;
+    max-height: 700px;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+.TVchannels h2 {
+    font-family: Rubik-Medium;
+}
+
+.TVchannels a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.TVchannels_list-First,
+.TVchannels_list-2x2,
+.TVchannels_list-RBK,
+.TVchannels_list-Amedia {
+    display: flex;
+}
+
+.TVchannels_list-RBK-left {
+    position: relative;
+    left: 22px;
+    bottom: 3px;
+}
+
+.TVchannels_list-RBK-right {
+    position: relative;
+    right: 22px;
+    top: 3px;
+}
+
+.TVchannels div {
+    background: #F2F2F2;
+    margin-bottom: 16px;
+    height: 162px;
+}
+
+.TVchannels_logo {
+    width: 30%;
+    text-align: center;
+    
+}
+
+.TVchannels_logo img {
+    padding-top: 49px;
+}
+
+.TVchannels_name {
+    padding-top: 21px;
+    padding-bottom: 17px;
+}
+
+.TVchannels_telecast-list td {
+    padding-right: 16px;
+    padding-bottom: 12px;
+}
+
+.TVchannels_telecast-list tr:first-child {
+    color: #E5261E;
+}
+
+
+
+
+
+
